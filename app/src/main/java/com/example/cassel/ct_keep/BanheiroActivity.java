@@ -6,11 +6,8 @@ import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -26,6 +23,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+import android.accounts.Account;
+import android.accounts.AccountManager;
+
 
 public class BanheiroActivity extends AppCompatActivity {
 
@@ -35,6 +35,7 @@ public class BanheiroActivity extends AppCompatActivity {
     public static final String URL =
             "https://docs.google.com/forms/d/1qjB02HWVRXmMZ_yviNT2Oc0tBLMI4zYxywsQIDmah1U/formResponse";
     //FORM
+    public static final String EMAIL = "entry.682450967";
     public static final String SALA = "entry.316324308";
     public static final String ANDAR = "entry.856988063";
     public static final String ANEXO = "entry.294284294";
@@ -108,7 +109,7 @@ public class BanheiroActivity extends AppCompatActivity {
         TextView salaId = (TextView)findViewById(R.id.textViewNumero);
         salaId.setText(sala);
         TextView andarId = (TextView)findViewById(R.id.textViewAndar);
-        andarId.setText(andar + "º Andar");
+        andarId.setText(andar);
         TextView anexoId = (TextView)findViewById(R.id.textViewAnexo);
         anexoId.setText(anexo);
         TextView tipoId = (TextView)findViewById(R.id.textViewTipo);
@@ -133,11 +134,35 @@ public class BanheiroActivity extends AppCompatActivity {
         }
     }
 
+
+    static String getEmail(Context context) {
+        AccountManager accountManager = AccountManager.get(context);
+        Account account = getAccount(accountManager);
+
+        if (account == null) {
+            return null;
+        } else {
+            return account.name;
+        }
+    }
+
+    private static Account getAccount(AccountManager accountManager) {
+        Account[] accounts = accountManager.getAccountsByType("com.google");
+        Account account;
+        if (accounts.length > 0) {
+            account = accounts[0];
+        } else {
+            account = null;
+        }
+        return account;
+    }
+
     private class PostDataTask extends AsyncTask<String, Void, Boolean> {
 
         @Override
         protected Boolean doInBackground(String... contactData) {
             Boolean result = true;
+            String email = getEmail(context);
             String url = contactData[0];
             String sala = contactData[1];
             String andar = contactData[2];
@@ -151,7 +176,8 @@ public class BanheiroActivity extends AppCompatActivity {
             String postBody = "";
 
             try {
-                postBody = SALA + "=" + URLEncoder.encode(sala, "UTF-8") +
+                postBody = EMAIL + "=" + URLEncoder.encode(email, "UTF-8") +
+                        "&" + SALA + "=" + URLEncoder.encode(sala, "UTF-8") +
                         "&" + ANDAR + "=" + URLEncoder.encode(andar, "UTF-8") +
                         "&" + ANEXO + "=" + URLEncoder.encode(anexo, "UTF-8") +
                         "&" + TIPO + "=" + URLEncoder.encode(tipo, "UTF-8") +

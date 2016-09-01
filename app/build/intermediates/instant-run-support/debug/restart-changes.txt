@@ -1,0 +1,1 @@
+CHANGED,/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/cassel/ct_keep/BanheiroActivity.class

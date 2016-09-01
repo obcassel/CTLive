@@ -2,95 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_27e8c0237abacb030e4e5799e7685e1a6775ddaf.jar" />
-    </item>
-    <item
         jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="f1f1d74f3a4f3f80f681e7c947718c14e6ac8a22">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_d38bc87155af58648871f864ea18009477afe13b.jar" />
-    </item>
-    <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.8.4/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="af8d42f1f020e936b8cd9f5cb6c75993194895a3">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/me.dm7.barcodescanner-core-1.8.4_06abfbd9944eb4f82e8616a700cccdd83ee55213.jar" />
-    </item>
-    <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.0.0_f1e1342a74beee27fad6c5162bfd2613d9ca1fd7.jar" />
-    </item>
-    <item
-        jar="/home/cassel/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.0.0/2943c74db6d4346ab8c6531adac91fa05c137c40/support-annotations-24.0.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_565e66106e489b4b2dba7e042ede436367f5e3a6.jar" />
-    </item>
-    <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="8df631c4d5f789b22f14214a72f605654be6b51c">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/instant-run_2e604dabd9fa396be23b6761c21f4fc5069aa8b9.jar" />
-    </item>
-    <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_d7658652bae2b5a84d69f57b0616434ca2fd877b.jar" />
-    </item>
-    <item
-        jar="/home/cassel/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/core-3.2.1_0620e5e382b7101825a77dd78618819d86b45029.jar" />
-    </item>
-    <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.8.4/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="68ef1daf85c69fca8fddf7bbb947fc51cc9f8ca3">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/me.dm7.barcodescanner-zxing-1.8.4_a2119e73a740c82fa62c6a6427b1ea7df6f082a1.jar" />
-    </item>
-    <item
-        jar="/home/cassel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/okio-1.9.0_0b388a2c052d96d5337e29208241c2b7512b95af.jar" />
-    </item>
-    <item
-        jar="/home/cassel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/okhttp-3.3.0_5c8856b21da96b5ed787f7b41d9637bab8ecad48.jar" />
-    </item>
-    <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.0.0_4cf02fd5cd7a011f9421200629174a89c8c0505f.jar" />
-    </item>
-    <item
-        jar="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
-        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.0.0_565c8747dec5e3aac3166b4b2b434fe4e6db1eeb.jar" />
+        sha1="9d941f2d0471bb0c2ab1ccb5c13b1cc6ee0f37e7">
+        <dex dex="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d38bc87155af58648871f864ea18009477afe13b/classes.dex" />
     </item>
 
 </items>

@@ -1,31 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="1"
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xhdpi"
     format="7"
-    timestamp="9895793793850"
-    token="8933999009339464992" >
+    timestamp="4733266922865"
+    token="8933999009339464992"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="3441" />
+        duration="322" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="525" />
     <task
         name="instant-run-transform"
-        duration="425" />
+        duration="22" />
     <task
         name="verifier"
-        duration="29" />
+        duration="2" />
 
     <artifact
-        location="/home/cassel/AndroidProjects/CT-Keep/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="9895793793850" >
+    <build timestamp="4124427715921" >
         <artifact
             location="/home/cassel/AndroidProjects/CT-Keep/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="4449496261494"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/builds/debug/4449496261494/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="4667429592185"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/builds/debug/4667429592185/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="4733266922865"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

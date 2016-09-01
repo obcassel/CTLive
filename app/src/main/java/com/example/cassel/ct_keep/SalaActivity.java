@@ -23,6 +23,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+import android.accounts.Account;
+import android.accounts.AccountManager;
+
 
 public class SalaActivity extends AppCompatActivity {
 
@@ -32,6 +35,7 @@ public class SalaActivity extends AppCompatActivity {
     public static final String URL =
             "https://docs.google.com/forms/d/1qUOfoFnKj1Ndm6zHb54iKOkRinFrBrmDaK0K4Utyr8Y/formResponse";
     //FORM
+    public static final String EMAIL = "entry.961485963";
     public static final String SALA = "entry.1101090603";
     public static final String ANDAR = "entry.1427981111";
     public static final String ANEXO = "entry.1256369507";
@@ -98,7 +102,7 @@ public class SalaActivity extends AppCompatActivity {
     }
 
     //Define as informações na Activity sobre a sala
-    public void defineInformation(){
+    public void defineInformation() {
         TextView salaId = (TextView)findViewById(R.id.textViewNumero);
         salaId.setText(sala);
         TextView andarId = (TextView)findViewById(R.id.textViewAndar);
@@ -108,7 +112,7 @@ public class SalaActivity extends AppCompatActivity {
     }
 
     //Define UI Elements
-    public void defineElementsUI(){
+    public void defineElementsUI() {
         limpeza = (Switch) findViewById(R.id.switchLimpeza);
         material = (Switch) findViewById(R.id.switchMateriais);
         arcondicionado = (Switch) findViewById(R.id.switchArQuebrado);
@@ -125,11 +129,34 @@ public class SalaActivity extends AppCompatActivity {
         }
     }
 
+    static String getEmail(Context context) {
+        AccountManager accountManager = AccountManager.get(context);
+        Account account = getAccount(accountManager);
+
+        if (account == null) {
+            return null;
+        } else {
+            return account.name;
+        }
+    }
+
+    private static Account getAccount(AccountManager accountManager) {
+        Account[] accounts = accountManager.getAccountsByType("com.google");
+        Account account;
+        if (accounts.length > 0) {
+            account = accounts[0];
+        } else {
+            account = null;
+        }
+        return account;
+    }
+
     private class PostDataTask extends AsyncTask<String, Void, Boolean> {
 
         @Override
         protected Boolean doInBackground(String... contactData) {
             Boolean result = true;
+            String email = getEmail(context);
             String url = contactData[0];
             String sala = contactData[1];
             String andar = contactData[2];
@@ -142,7 +169,8 @@ public class SalaActivity extends AppCompatActivity {
             String postBody = "";
 
             try {
-                postBody = SALA + "=" + URLEncoder.encode(sala, "UTF-8") +
+                postBody = EMAIL + "=" + URLEncoder.encode(email, "UTF-8") +
+                        "&" +  SALA + "=" + URLEncoder.encode(sala, "UTF-8") +
                         "&" + ANDAR + "=" + URLEncoder.encode(andar, "UTF-8") +
                         "&" + ANEXO + "=" + URLEncoder.encode(anexo, "UTF-8") +
                         "&" + LIMPEZA + "=" + URLEncoder.encode(limpeza, "UTF-8") +
