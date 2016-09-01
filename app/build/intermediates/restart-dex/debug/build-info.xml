@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="1"
+    format="7"
+    timestamp="9895793793850"
+    token="8933999009339464992" >
+
+    <task
+        name="javac"
+        duration="3441" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="425" />
+    <task
+        name="verifier"
+        duration="29" />
+
+    <artifact
+        location="/home/cassel/AndroidProjects/CT-Keep/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="9895793793850" >
+        <artifact
+            location="/home/cassel/AndroidProjects/CT-Keep/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

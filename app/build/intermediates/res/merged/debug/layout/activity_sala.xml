@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_form"
+        android:id="@+id/enviaFormSala"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_manutencao"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sala"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nº"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textViewNumero"
+        android:layout_toStartOf="@+id/textViewNumero" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="000"
+        android:id="@+id/textViewNumero"
+        android:textSize="25dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/enviaFormSala"
+        android:layout_alignEnd="@+id/enviaFormSala" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1º Andar"
+        android:id="@+id/textViewAndar"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Anexo"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/textViewAndar"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A"
+        android:id="@+id/textViewAnexo"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textViewAndar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpeza da Sala  "
+        android:id="@+id/switchLimpeza"
+        android:textSize="22sp"
+        android:switchMinWidth="56dp"
+        android:layout_marginTop="25dp"
+        android:checked="false"
+        android:layout_below="@+id/view"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Necessita Materiais  "
+        android:id="@+id/switchMateriais"
+        android:textSize="22sp"
+        android:switchMinWidth="56dp"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:layout_below="@+id/switchLimpeza"
+        android:layout_alignRight="@+id/switchLimpeza"
+        android:layout_alignEnd="@+id/switchLimpeza" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ar Condicionado Quebrado  "
+        android:id="@+id/switchArQuebrado"
+        android:textSize="22sp"
+        android:switchMinWidth="56dp"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:layout_below="@+id/switchMateriais"
+        android:layout_alignRight="@+id/switchMateriais"
+        android:layout_alignEnd="@+id/switchMateriais" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DataShow Quebrado  "
+        android:id="@+id/switchDataShowQuebrado"
+        android:textSize="22sp"
+        android:switchMinWidth="56dp"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:layout_below="@+id/switchArQuebrado"
+        android:layout_alignRight="@+id/switchArQuebrado"
+        android:layout_alignEnd="@+id/switchArQuebrado" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Outro Problema:"
+        android:id="@+id/textView3"
+        android:layout_marginTop="22dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/switchDataShowQuebrado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/enviaFormSala"
+        android:layout_alignEnd="@+id/enviaFormSala" />
+
+</RelativeLayout>
+
+
+
