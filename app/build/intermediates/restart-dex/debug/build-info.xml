@@ -3,59 +3,69 @@
     abi="armeabi-v7a,armeabi"
     api-level="22"
     density="xhdpi"
-    format="7"
-    timestamp="4733266922865"
-    token="8933999009339464992"
-    verifier="COMPATIBLE" >
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="96190648046781"
+    token="8194232419179319182"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="322" />
+        duration="108" />
     <task
         name="instant-run-dex"
-        duration="525" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="22" />
+        duration="39" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
     <artifact
-        location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/res/resources-debug.ap_"
+        location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
         type="RESOURCES" />
     <artifact
-        location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        type="DEX" />
 
-    <build timestamp="4124427715921" >
+    <build
+        timestamp="89000011772137"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
-            location="/home/cassel/AndroidProjects/CT-Keep/app/build/outputs/apk/app-debug.apk"
+            location="/home/cassel/Android/android-projects/ctkeep/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="4449496261494"
-        verifier="COMPATIBLE" >
+        timestamp="90854614461987"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/builds/debug/4449496261494/classes.dex"
-            type="RELOAD_DEX" />
+            location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
     </build>
     <build
-        timestamp="4667429592185"
-        verifier="COMPATIBLE" >
+        timestamp="95338725780736"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/builds/debug/4667429592185/classes.dex"
-            type="RELOAD_DEX" />
+            location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
     </build>
     <build
-        timestamp="4733266922865"
-        verifier="COMPATIBLE" >
+        timestamp="96010189972604"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/res/resources-debug.ap_"
+            location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="96190648046781"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
         <artifact
-            location="/home/cassel/AndroidProjects/CT-Keep/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

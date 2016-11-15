@@ -28,4 +28,5 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.3.0'
     //ZXING QRCODE READER
     compile 'me.dm7.barcodescanner:zxing:1.8.4'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
 }

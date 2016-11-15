@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">CT Keep</string>
+    <string name="app_name">Live CT</string>
     <string name="button_manutencao">Solicitar Manutenção</string>
+    <string name="button_historico">Historico de Solicitações</string>
     <string name="button_funciona">Como funciona?</string>
     <string name="button_form">Enviar Formulário</string>
+
+    <string name="leitura_qcode">Leitura de QRCode</string>
 </resources>

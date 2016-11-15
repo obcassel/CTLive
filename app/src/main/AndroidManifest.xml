@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,22 +25,33 @@
         </activity>
 
 
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".activities.MainActivity"></activity>
 
         <activity
-            android:name=".HowItWork"
-            android:parentActivityName="com.example.cassel.ct_keep.MainActivity"></activity>
+            android:name=".helpers.QrScanner"
+            android:label="@string/leitura_qcode"
+            android:parentActivityName="com.example.cassel.ct_keep.activities.MainActivity"></activity>
 
         <activity
-            android:name=".QrScanner"
-            android:parentActivityName="com.example.cassel.ct_keep.MainActivity"></activity>
+            android:name=".activities.HistoricActivity"
+            android:label="@string/button_historico"
+            android:parentActivityName="com.example.cassel.ct_keep.activities.MainActivity"></activity>
 
         <activity
-            android:name=".BanheiroActivity"
-            android:parentActivityName="com.example.cassel.ct_keep.MainActivity"></activity>
+            android:name=".activities.HowItWork"
+            android:label="@string/button_funciona"
+            android:parentActivityName="com.example.cassel.ct_keep.activities.MainActivity"></activity>
 
         <activity
-            android:name=".SalaActivity"
-            android:parentActivityName="com.example.cassel.ct_keep.MainActivity"></activity>
+            android:name=".activities.BanheiroActivity"
+            android:parentActivityName="com.example.cassel.ct_keep.activities.MainActivity"></activity>
+
+        <activity
+            android:name=".activities.SalaActivity"
+            android:parentActivityName="com.example.cassel.ct_keep.activities.MainActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 </manifest>

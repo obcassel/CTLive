@@ -6,11 +6,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_ct"
+        android:id="@+id/imageView"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="200px"
+        android:layout_height="180px"
         android:text="@string/button_manutencao"
         android:onClick="QrScanner"
         android:textColor="#ffffff"
@@ -19,30 +28,37 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"
+        android:id="@+id/button_manutencao" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_historico"
+        android:onClick="viewHistoric"
+        android:textColor="#FFF"
+        android:background="@drawable/button_funcionamento"
+        android:textSize="16sp"
+        android:id="@+id/button_historico"
+        android:layout_below="@+id/button_manutencao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_funciona"
-        android:onClick="comoFunciona"
+        android:onClick="howItWorks"
         android:textColor="#FFF"
         android:background="@drawable/button_funcionamento"
         android:textSize="16sp"
-        android:layout_marginBottom="54dp"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:layout_below="@+id/button_historico"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo_ct"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
-
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
 
 </RelativeLayout>
 
