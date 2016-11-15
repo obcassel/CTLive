@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.cassel.ct_keep.activities.BanheiroActivity;
 import com.example.cassel.ct_keep.activities.SalaActivity;
 import com.google.zxing.Result;
+import com.google.zxing.common.StringUtils;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -48,13 +50,30 @@ public class QrScanner extends AppCompatActivity implements ZXingScannerView.Res
             String banheiro = c.getString("banheiro").toString();
             String anexo = c.getString("anexo").toString();
             String andar = c.getString("andar").toString();
-            sendToView(tipo, numero, banheiro, anexo, andar);
+            String serial = c.getString("serial").toString();
+            if(checkCRC(tipo, numero, banheiro, anexo, andar, serial)) {
+                sendToView(tipo, numero, banheiro, anexo, andar);
+            } else {
+                Toast.makeText(this, "QRCode inválido!", Toast.LENGTH_LONG).show();
+                this.finish();
+            }
         } catch (Exception e) {
             Toast.makeText(this, "Não foi possível identificar o QRCode, tente novamente!", Toast.LENGTH_LONG).show();
             e.printStackTrace();
-            //mScannerView.resumeCameraPreview(this);
             this.finish();
         }
+    }
+
+    public boolean checkCRC(Integer tipo, String numero, String banheiro, String anexo, String andar, String serial) {
+        SrcManager src = new SrcManager();
+        String str = tipo.toString() + numero + banheiro + andar + anexo;
+        Integer srcSerial = src.calcularCRC(str);
+        Log.w("srcSerial", srcSerial.toString());
+        Log.w("Serial", serial);
+        if (Integer.parseInt(serial) == srcSerial) {
+            return true;
+        }
+        return false;
     }
 
     public void sendToView(Integer tipo, String numero, String banheiro, String anexo, String andar) {
