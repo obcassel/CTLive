@@ -3,18 +3,14 @@ package com.example.cassel.ct_keep.helpers;
 /**
  * Classe correspondente a um item de uma lista
  */
-
 public class ListViewItem {
-
     private String texto_data;
     private String texto_tipo;
     private String texto_anexo;
     private String texto_andar;
 
-
     /**
      * Método construtor com apenas texto_data no item
-     *
      * @param texto string referente ao item da lista
      */
     public ListViewItem(String texto) {
@@ -24,6 +20,13 @@ public class ListViewItem {
         this.setTexto_andar("");
     }
 
+    /**
+     * Método construtor com todos os Itens da Lista
+     * @param data Data da solicitação
+     * @param tipo Tipo de Sala (Sala ou banheiro)
+     * @param anexo Anexo da sala
+     * @param andar Andar da Sala
+     */
     public ListViewItem(String data, String tipo, String anexo, String andar) {
         this.setTexto_data(data);
         this.setTexto_tipo(tipo);

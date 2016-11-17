@@ -9,180 +9,181 @@
     tools:context=".activities.MainActivity">
 
     <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_form"
         android:id="@+id/enviaFormBanheiro"
-        android:textColor="#ffffff"
-        android:background="@drawable/button_manutencao"
-        android:textSize="16sp"
-        android:layout_marginBottom="24dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Banheiro"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Nº"
-        android:id="@+id/textView2"
-        android:layout_marginRight="82dp"
-        android:layout_marginEnd="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="000"
-        android:id="@+id/textViewNumero"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="44dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Masculino"
-        android:id="@+id/textViewTipo"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="1º Andar"
-        android:id="@+id/textViewAndar"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Anexo"
-        android:id="@+id/textView4"
-        android:layout_alignTop="@+id/textViewAndar"
-        android:layout_toLeftOf="@+id/textView2"
-        android:layout_toStartOf="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="A"
-        android:id="@+id/textViewAnexo"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
-
-    <View
         android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="14dp"
-        android:layout_below="@+id/textViewAndar"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_manutencao"
+        android:text="@string/button_form"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/view" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Limpeza do Banheiro  "
-        android:id="@+id/switchLimpeza"
-        android:textSize="22sp"
-        android:switchMinWidth="56dp"
-        android:layout_marginTop="25dp"
-        android:checked="false"
-        android:layout_below="@+id/view"
-        android:layout_alignRight="@+id/textViewNumero"
-        android:layout_alignEnd="@+id/textViewNumero" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Papel Higiênico  "
-        android:id="@+id/switchHigienico"
-        android:textSize="22sp"
-        android:switchMinWidth="56dp"
-        android:layout_marginTop="22dp"
-        android:checked="false"
-        android:layout_below="@+id/switchLimpeza"
-        android:layout_alignRight="@+id/switchLimpeza"
-        android:layout_alignEnd="@+id/switchLimpeza" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Papel Toalha  "
-        android:id="@+id/switchPapel"
-        android:textSize="22sp"
-        android:switchMinWidth="56dp"
-        android:checked="false"
-        android:layout_below="@+id/switchHigienico"
-        android:layout_alignRight="@+id/switchHigienico"
-        android:layout_alignEnd="@+id/switchHigienico"
-        android:layout_marginTop="22dp" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sabonete  "
-        android:id="@+id/switchSabonete"
-        android:textSize="22sp"
-        android:switchMinWidth="56dp"
-        android:checked="false"
-        android:layout_marginTop="22dp"
-        android:layout_below="@+id/switchPapel"
-        android:layout_alignRight="@+id/switchPapel"
-        android:layout_alignEnd="@+id/switchPapel" />
+        android:layout_alignParentTop="true"
+        android:text="@string/banheiro"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Outro Problema:"
-        android:id="@+id/textView3"
-        android:textSize="22sp"
-        android:layout_marginTop="22dp"
-        android:layout_below="@+id/switchSabonete"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:text="@string/num"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewAndar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAndar"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:text="@string/anexo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewAnexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/textView4"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewAndar"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorPrimary" />
+
+    <Switch
+        android:id="@+id/switchLimpeza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewNumero"
+        android:layout_alignRight="@+id/textViewNumero"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="25dp"
+        android:checked="false"
+        android:switchMinWidth="56dp"
+        android:text="@string/limpeza"
+        android:textSize="22sp" />
+
+    <Switch
+        android:id="@+id/switchHigienico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/switchLimpeza"
+        android:layout_alignRight="@+id/switchLimpeza"
+        android:layout_below="@+id/switchLimpeza"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:switchMinWidth="56dp"
+        android:text="@string/papel_hig"
+        android:textSize="22sp" />
+
+    <Switch
+        android:id="@+id/switchPapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/switchHigienico"
+        android:layout_alignRight="@+id/switchHigienico"
+        android:layout_below="@+id/switchHigienico"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:switchMinWidth="56dp"
+        android:text="@string/papel_toalha"
+        android:textSize="22sp" />
+
+    <Switch
+        android:id="@+id/switchSabonete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/switchPapel"
+        android:layout_alignRight="@+id/switchPapel"
+        android:layout_below="@+id/switchPapel"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:switchMinWidth="56dp"
+        android:text="@string/sabonete"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/switchSabonete"
+        android:layout_marginTop="22dp"
+        android:text="@string/outro"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp" />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:textSize="18sp"
-        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/enviaFormBanheiro"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/enviaFormBanheiro"
-        android:layout_alignEnd="@+id/enviaFormBanheiro" />
+        android:layout_below="@+id/textView3"
+        android:inputType=""
+        android:textSize="18sp" />
 </RelativeLayout>
 

@@ -1,13 +1,16 @@
 package com.example.cassel.ct_keep.helpers;
 
-
+/**
+ * Gerenciador do cálculo do CRC
+ */
 public class SrcManager {
 
     /**
      * Funcao de cálculo do CRC32,
-     * @autor Robert Sedgewick and Kevin Wayne.
+     *
      * @param string String a ser transformada
-     * @return crc
+     * @return integer CRC calculado
+     * @autor Robert Sedgewick and Kevin Wayne.
      */
     public Integer calcularCRC(String string) {
         int crc = 0xFFFFFFFF;       // initial contents of LFBSR

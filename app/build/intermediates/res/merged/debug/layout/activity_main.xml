@@ -9,56 +9,56 @@
     tools:context=".activities.MainActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_ct"
-        android:id="@+id/imageView"
-        android:layout_marginTop="14dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/logo_ct" />
 
     <Button
+        android:id="@+id/button_manutencao"
         android:layout_width="fill_parent"
-        android:layout_height="180px"
-        android:text="@string/button_manutencao"
-        android:onClick="QrScanner"
-        android:textColor="#ffffff"
-        android:background="@drawable/button_manutencao"
-        android:textSize="18sp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="40dp"
-        android:id="@+id/button_manutencao" />
+        android:background="@drawable/button_manutencao"
+        android:onClick="QrScanner"
+        android:text="@string/button_manutencao"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_historico"
-        android:onClick="viewHistoric"
-        android:textColor="#FFF"
-        android:background="@drawable/button_funcionamento"
-        android:textSize="16sp"
         android:id="@+id/button_historico"
-        android:layout_below="@+id/button_manutencao"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_funciona"
-        android:onClick="howItWorks"
-        android:textColor="#FFF"
-        android:background="@drawable/button_funcionamento"
-        android:textSize="16sp"
-        android:id="@+id/button"
-        android:layout_below="@+id/button_historico"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_below="@+id/button_manutencao"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_funcionamento"
+        android:onClick="viewHistoric"
+        android:text="@string/button_historico"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_historico"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_funcionamento"
+        android:onClick="howItWorks"
+        android:text="@string/button_funciona"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
 
 </RelativeLayout>
 

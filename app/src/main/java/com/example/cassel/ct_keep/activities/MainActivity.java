@@ -13,11 +13,15 @@ import org.json.JSONArray;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
+/**
+ * MAIN Activity
+ */
 public class MainActivity extends AppCompatActivity {
 
-    private ZXingScannerView mScannerView;
-    JSONArray sala = null;
-
+    /**
+     * Método construtor
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //força orientação portrait
@@ -26,20 +30,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Chama a view de leitura de QRCode
+     * @param view
+     */
     public void QrScanner(View view) {
         Intent intent = new Intent(this, QrScanner.class);
         startActivity(intent);
     }
 
-    public void howItWorks(View view) {
-        Intent intent = new Intent(this, HowItWork.class);
-        startActivity(intent);
-    }
-
+    /**
+     * Chama a view do histórico
+     * @param view
+     */
     public void viewHistoric(View view) {
         Intent intent = new Intent(this, HistoricActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Chama a view de como funciona o app
+     * @param view
+     */
+    public void howItWorks(View view) {
+        Intent intent = new Intent(this, HowItWork.class);
+        startActivity(intent);
+    }
 
 }

@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.cassel.ct_keep.R;
 
 /**
- * Created by cassel on 01/07/16.
+ * Activity da Tela de como funciona
  */
 public class HowItWork extends AppCompatActivity {
 

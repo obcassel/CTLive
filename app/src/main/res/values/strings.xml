@@ -1,9 +1,41 @@
 <resources>
     <string name="app_name">Live CT</string>
+    //Main Activity
     <string name="button_manutencao">Solicitar Manutenção</string>
     <string name="button_historico">Historico de Solicitações</string>
     <string name="button_funciona">Como funciona?</string>
     <string name="button_form">Enviar Formulário</string>
 
+    //QrScanner
     <string name="leitura_qcode">Leitura de QRCode</string>
+
+    //Historico
+    <string name="nenhuma_encontrada">"Nenhuma solicitação encontrada"</string>
+
+    //QRScanner
+    <string name="qrcode_invalido">"QRCode inválido!"</string>
+    <string name="qrcode_nao_identificado">"Não foi possível identificar o QRCode, tente novamente!"</string>
+
+    //Activity Sala
+    <string name="sala">Sala</string>
+    <string name="num">Nº</string>
+    <string name="anexo">Anexo</string>
+    <string name="limpeza">Limpeza da Sala  </string>
+    <string name="materiais">Necessita Materiais  </string>
+    <string name="arquebrado">Ar Condicionado Quebrado  </string>
+    <string name="data_show_quebrado">DataShow Quebrado  </string>
+    <string name="outro">Outro Problema:</string>
+
+    //Activity Banheiro
+    <string name="banheiro">Banheiro</string>
+    <string name="limpeza_ban">Limpeza do Banheiro  </string>
+    <string name="papel_hig">Papel Higiênico  </string>
+    <string name="papel_toalha">Papel Toalha  </string>
+    <string name="sabonete">Sabonete  </string>
+    //Dialogs
+    <string name="enviando_solicitação">Enviando Solicitação...</string>
+
+    //Toast
+    <string name="erro_enviar">Um erro ocorreu, por favor, tente novamente!</string>
+    <string name="sucesso_enviar">"Solicitação enviada com sucesso!"</string>
 </resources>

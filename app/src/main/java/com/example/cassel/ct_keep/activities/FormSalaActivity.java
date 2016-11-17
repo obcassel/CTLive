@@ -32,15 +32,19 @@ import android.accounts.AccountManager;
 
 import com.example.cassel.ct_keep.R;
 
-
-public class SalaActivity extends AppCompatActivity {
+/**
+ * Activity do Formulário de Salas
+ */
+public class FormSalaActivity extends FormActivity{
 
     public static final MediaType FORM_DATA_TYPE
             = MediaType.parse("application/x-www-form-urlencoded; charset=utf-8");
 
+    //Definição do endereço dos dados do Formulário google
+    //Endereço do Form
     public static final String URL =
             "https://docs.google.com/forms/d/1qUOfoFnKj1Ndm6zHb54iKOkRinFrBrmDaK0K4Utyr8Y/formResponse";
-    //FORM
+    //Elementos de entrada do formulário
     public static final String EMAIL = "entry.961485963";
     public static final String SALA = "entry.1101090603";
     public static final String ANDAR = "entry.1427981111";
@@ -53,25 +57,30 @@ public class SalaActivity extends AppCompatActivity {
 
     //UI Helpers
     private Context context;
-    private ProgressDialog dialog;
 
+    //Informações do banheiro
     private String sala;
     private String andar;
     private String anexo;
 
+    //Informações de solicitação
     private Switch limpeza;
     private Switch material;
     private Switch arcondicionado;
     private Switch datashow;
     private EditText outro;
 
+    /**
+     * Método de criação da activity
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sala);
 
-        //Contexto da Activity
         context = this;
 
         getSalaInformation(getIntent().getExtras());
@@ -83,7 +92,7 @@ public class SalaActivity extends AppCompatActivity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createDialog("Enviando Solicitação...");
+                createDialog(getResources().getString(R.string.enviando_solicitação));
                 PostDataTask postDataTask = new PostDataTask();
 
                 String limpezaMsg = verifyChecked(limpeza.isChecked());
@@ -97,19 +106,25 @@ public class SalaActivity extends AppCompatActivity {
         });
     }
 
-    //Get Sala Information
+    /**
+     * Recebe as Informações do banheiro
+     *
+     * @param extras
+     */
     public void getSalaInformation(Bundle extras) {
         if (extras != null) {
             sala = extras.getString("num");
             andar = extras.getString("andar") + "º Andar";
             anexo = extras.getString("anexo");
         } else {
-            Toast.makeText(context, "Um erro ocorreu, por favor, tente novamente!", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, getResources().getString(R.string.erro_enviar), Toast.LENGTH_LONG).show();
             finish();
         }
     }
 
-    //Define as informações na Activity sobre a sala
+    /**
+     * Define as informações na View sobre a sala
+     */
     public void defineInformation() {
         TextView salaId = (TextView) findViewById(R.id.textViewNumero);
         salaId.setText(sala);
@@ -119,7 +134,9 @@ public class SalaActivity extends AppCompatActivity {
         anexoId.setText(anexo);
     }
 
-    //Define UI Elements
+    /**
+     *  Define quais são os elementos da View
+     */
     public void defineElementsUI() {
         limpeza = (Switch) findViewById(R.id.switchLimpeza);
         material = (Switch) findViewById(R.id.switchMateriais);
@@ -128,40 +145,15 @@ public class SalaActivity extends AppCompatActivity {
         outro = (EditText) findViewById(R.id.editText);
     }
 
-    //Verifica se esta checado
-    public String verifyChecked(boolean isChecked) {
-        if (isChecked) {
-            return "SIM";
-        } else {
-            return "";
-        }
-    }
-
-    static String getEmail(Context context) {
-        AccountManager accountManager = AccountManager.get(context);
-        Account account = getAccount(accountManager);
-
-        if (account == null) {
-            return null;
-        } else {
-            return account.name;
-        }
-    }
-
-    private static Account getAccount(AccountManager accountManager) {
-        Account[] accounts = accountManager.getAccountsByType("com.google");
-        Account account;
-        if (accounts.length > 0) {
-            account = accounts[0];
-        } else {
-            account = null;
-        }
-        return account;
-    }
-
+    /**
+     * Cria uma tarefa Assincrona
+     */
     private class PostDataTask extends AsyncTask<String, Void, Boolean> {
-
         @Override
+        /**
+         * Efetua o envio dos dados em Background
+         * Recebe os dados preenchidos pelo usuário e envia ao formulário
+         */
         protected Boolean doInBackground(String... contactData) {
             Boolean result = true;
             String email = getEmail(context);
@@ -204,53 +196,16 @@ public class SalaActivity extends AppCompatActivity {
             return result;
         }
 
+        /**
+         * Executa ao completar o envio dos daoos
+         * @param result
+         */
         @Override
         protected void onPostExecute(Boolean result) {
-            saveHistoricSolicitation();
-            Toast.makeText(context, result ? "Solicitação enviada com sucesso!" : "Ocorreu um erro ao enviar a solicitação. Por favor, verifique a conexão com a internet.", Toast.LENGTH_LONG).show();
+            saveHistoricSolicitation(context, anexo, andar);
+            Toast.makeText(context, result ? getResources().getString(R.string.sucesso_enviar) : getResources().getString(R.string.erro_enviar), Toast.LENGTH_LONG).show();
             destroyDialog();
             finish();
         }
-    }
-
-    /**
-     *  Salva Historico de Solicitações
-     */
-    public void saveHistoricSolicitation() {
-        SharedPreferences sharedPref = context.getSharedPreferences("LivePreferences", Context.MODE_PRIVATE);
-        int number = sharedPref.getInt("Number", 0);
-
-        SharedPreferences.Editor editor = sharedPref.edit();
-
-        Calendar c = Calendar.getInstance();
-        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-
-        Integer i = number + 1;
-        editor.putInt("Number", i);
-        editor.putString("data_" + i, df.format(c.getTime()));
-        editor.putString("tipo_" + i, "Sala " + sala);
-        editor.putString("anexo_" + i, "Anexo " + anexo);
-        editor.putString("andar_" + i, andar);
-        editor.commit();
-    }
-
-    /**
-     * Cria uma mensagem de carregamento na activity
-     *
-     * @param message mensagem a ser mostrada
-     */
-    public void createDialog(String message) {
-        this.dialog = new ProgressDialog(this);
-        this.dialog.setMessage(message);
-        this.dialog.setIndeterminate(false);
-        this.dialog.setCanceledOnTouchOutside(false);
-        this.dialog.show();
-    }
-
-    /**
-     * Remove a mensagem da activity
-     */
-    public void destroyDialog() {
-        this.dialog.dismiss();
     }
 }

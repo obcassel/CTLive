@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by cassel on 01/07/16.
+ * Classe gerenciadora da Splash Screen/Load do APP
  */
 public class SplashActivity extends AppCompatActivity {
 

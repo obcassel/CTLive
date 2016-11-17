@@ -5,34 +5,27 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="142135565412072"
+    timestamp="80175194390470"
     token="8194232419179319182"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="157" />
+        duration="2322" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="28" />
+        duration="383" />
     <task
         name="verifier"
-        duration="1" />
+        duration="7" />
 
     <artifact
-        location="/home/cassel/Android/android-projects/ctkeep/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
+        location="/home/cassel/Android/android-projects/ctkeep/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build
-        timestamp="141993681494994"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/cassel/Android/android-projects/ctkeep/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
-    </build>
     <build
         timestamp="142135565412072"
         verifier="COLD_SWAP_REQUESTED" >

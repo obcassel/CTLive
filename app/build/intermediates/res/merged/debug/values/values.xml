@@ -365,9 +365,12 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="anexo">Anexo</string>
     <string name="app_name">Live CT</string>
+    <string name="arquebrado">Ar Condicionado Quebrado  </string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <string name="banheiro">Banheiro</string>
     <string name="button_form">Enviar Formulário</string>
     <string name="button_funciona">Como funciona?</string>
     <string name="button_historico">Historico de Solicitações</string>
@@ -401,8 +404,24 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="data_show_quebrado">DataShow Quebrado  </string>
+    <string name="enviando_solicitação">Enviando Solicitação...</string>
+    <string name="erro_enviar">Um erro ocorreu, por favor, tente novamente!</string>
     <string name="leitura_qcode">Leitura de QRCode</string>
+    <string name="limpeza">Limpeza da Sala  </string>
+    <string name="limpeza_ban">Limpeza do Banheiro  </string>
+    <string name="materiais">Necessita Materiais  </string>
+    <string name="nenhuma_encontrada">"Nenhuma solicitação encontrada"</string>
+    <string name="num">Nº</string>
+    <string name="outro">Outro Problema:</string>
+    <string name="papel_hig">Papel Higiênico  </string>
+    <string name="papel_toalha">Papel Toalha  </string>
+    <string name="qrcode_invalido">"QRCode inválido!"</string>
+    <string name="qrcode_nao_identificado">"Não foi possível identificar o QRCode, tente novamente!"</string>
+    <string name="sabonete">Sabonete  </string>
+    <string name="sala">Sala</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="sucesso_enviar">"Solicitação enviada com sucesso!"</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

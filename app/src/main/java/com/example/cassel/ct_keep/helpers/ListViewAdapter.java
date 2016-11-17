@@ -11,13 +11,16 @@ import com.example.cassel.ct_keep.R;
 
 import java.util.ArrayList;
 
+/**
+ * Class gerenciadora de uma List View
+ */
 public class ListViewAdapter extends BaseAdapter {
-
     private LayoutInflater mInflater;
     private ArrayList<ListViewItem> itens;
 
     /**
      * Inicia a List View
+     *
      * @param context
      * @param itens
      */
@@ -28,7 +31,8 @@ public class ListViewAdapter extends BaseAdapter {
 
     /**
      * Retorna a quantidade de itens
-     * @return
+     *
+     * @return Integer
      */
     public int getCount() {
         return itens.size();
@@ -36,23 +40,27 @@ public class ListViewAdapter extends BaseAdapter {
 
     /**
      * Retorna o item de acordo com a posicao dele na tela.
+     *
      * @param position posição do item
-     * @return
+     * @return ListViewItem
      */
     public ListViewItem getItem(int position) {
         return itens.get(position);
     }
 
     /**
+     * Retorno o primeiro Item da List View
      *
      * @param position
      * @return
      */
+    @Override
     public long getItemId(int position) {
-        return position;
+        return 0;
     }
 
     /**
+     * Define os dados em suas determinadas posições na view
      *
      * @param position
      * @param view

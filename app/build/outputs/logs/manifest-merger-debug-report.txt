@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:2:1-57:12
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidMani
 	android:name
 		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:9:22-66
 application
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:11:5-56:19
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:11:5-50:19
 MERGED from [com.android.support:appcompat-v7:24.0.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
@@ -54,68 +54,61 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/cassel/A
 	android:theme
 		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:16:9-40
 activity#com.example.cassel.ct_keep.activities.SplashActivity
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:17:9-25:20
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:17:9-24:20
 	android:theme
 		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:19:13-47
 	android:name
 		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:18:13-54
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
 ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
 		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.example.cassel.ct_keep.activities.MainActivity
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:28:9-70
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:26:9-70
 	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:28:19-58
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:26:19-58
 activity#com.example.cassel.ct_keep.helpers.QrScanner
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:30:9-33:104
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:28:9-31:104
 	android:label
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:32:13-50
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:30:13-50
 	android:parentActivityName
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:33:13-92
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:31:13-92
 	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:31:13-46
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:29:13-46
 activity#com.example.cassel.ct_keep.activities.HistoricActivity
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:35:9-38:104
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:33:9-36:104
 	android:label
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:37:13-53
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:35:13-53
 	android:parentActivityName
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:38:13-92
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:36:13-92
 	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:36:13-56
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:34:13-56
 activity#com.example.cassel.ct_keep.activities.HowItWork
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:40:9-43:104
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:38:9-41:104
 	android:label
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:42:13-52
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:40:13-52
 	android:parentActivityName
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:43:13-92
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:41:13-92
 	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:41:13-49
-activity#com.example.cassel.ct_keep.activities.BanheiroActivity
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:45:9-47:104
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:39:13-49
+activity#com.example.cassel.ct_keep.activities.FormBanheiroActivity
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:43:9-45:104
 	android:parentActivityName
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:47:13-92
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:45:13-92
 	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:46:13-56
-activity#com.example.cassel.ct_keep.activities.SalaActivity
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:49:9-51:104
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:44:13-60
+activity#com.example.cassel.ct_keep.activities.FormSalaActivity
+ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:47:9-49:104
 	android:parentActivityName
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:51:13-92
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:49:13-92
 	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:50:13-52
-meta-data#com.google.android.gms.version
-ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:53:9-55:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:55:13-66
-	android:name
-		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:54:13-58
+		ADDED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml:48:13-56
 uses-sdk
 INJECTED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.0.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:21:5-23:78
@@ -135,3 +128,9 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/cassel/A
 	android:minSdkVersion
 		INJECTED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml
 		INJECTED from /home/cassel/Android/android-projects/ctkeep/app/src/main/AndroidManifest.xml
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /home/cassel/Android/android-projects/ctkeep/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:22:13-58

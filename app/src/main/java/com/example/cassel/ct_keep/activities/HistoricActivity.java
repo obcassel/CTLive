@@ -16,11 +16,17 @@ import com.example.cassel.ct_keep.helpers.ListViewItem;
 
 import java.util.ArrayList;
 
-
+/**
+ *  Gerencia o histórico de solicitações do usuário
+ */
 public class HistoricActivity extends AppCompatActivity {
     private AbsListView lista;
     private ArrayList<ListViewItem> itens;
 
+    /**
+     * Método construtor da acitivity
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -33,11 +39,15 @@ public class HistoricActivity extends AppCompatActivity {
         this.searchHistoric(this);
     }
 
+    /**
+     * Busca o histórico
+     * @param context
+     */
     public void searchHistoric(Context context){
         SharedPreferences sharedPref = context.getSharedPreferences("LivePreferences", Context.MODE_PRIVATE);
         Integer number = sharedPref.getInt("Number", 0);
         if(number == 0) {
-            itens.add(new ListViewItem("Nenhuma solicitação encontrada"));
+            itens.add(new ListViewItem(getResources().getString(R.string.nenhuma_encontrada)));
         } else {
             for (Integer i = 1; i <= number; i++) {
                 itens.add(new ListViewItem(sharedPref.getString("data_" + i, ""),
@@ -49,6 +59,9 @@ public class HistoricActivity extends AppCompatActivity {
         setAdapter();
     }
 
+    /**
+     * Define o List View Adapter
+     */
     public void setAdapter() {
         ListViewAdapter listViewAdapter = new ListViewAdapter(this, itens);
         lista.setAdapter(listViewAdapter);
